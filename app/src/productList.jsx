@@ -2,7 +2,7 @@ import { View, Text, FlatList, Button, StyleSheet } from "react-native";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "./cartSlice";
-// import Cart from "./cart";
+import Cart from "./cart";
 const products = [
   { id: 1, name: "Laptop", price: 1000 },
   { id: 2, name: "Phone", price: 500 },
@@ -29,7 +29,7 @@ export default function ProductList() {
           </View>
         )}
       />
-      {/* <Cart /> */}
+      <Cart />
     </View>
   );
 }
